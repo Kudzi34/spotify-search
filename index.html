@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="spotify.css">
-    </head>
-    <body>
-        <h1>Spotify Search</h1>
-<input type="text" name="userInput" ="">
-<select class=" artist-album-select">
-    <option id="artist">artist</option>
-    <option id="album">album</option>
-</select>
-<button id="submit-button">submit</button>
-<div class="results">
-    <div class="searchFeedBack"></div>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="spotify.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="label-div"><h1>MyMusic</h1></div>
+      <div class="container-fluid">
+        <div class="jumbotron">
+          <div class="row main-div ">
+            <div class=" col-sm-12 col-lg-12">
+              <input type="text" name="userInput" placeholder="Search Artist" />
+              <select class=" artist-album-select">
+                <option id="artist">artist</option>
+                <option id="album">album</option>
+              </select>
+              <button class="btn btn-primary btn-lg " id="submit-button">
+                Submit
+              </button>
+              <button class="btn btn-primary btn-lg " id="moreBtn">More</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-</div>
-<div class="moresection">
-    <button id="moreBtn">MORE</button>
-
-</div>
-
-
+      <div class="row"><div class="  searchFeedBack col-lg-12"></div></div>
+      <div class="row results-div"><div class="results col-md-6"></div></div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="spotify.js"></script>
-    </body>
+  </body>
 </html>
